@@ -138,3 +138,27 @@ $parallaxLayers: 3;
         }
     }
 }
+
+.fortuneCookie {
+    height: 80vh;
+    .in-the-cookie{
+        background: url('./components/Home/darkmoon.png') no-repeat;
+        padding: 40vh 0;
+        background-position: center;
+        h1 {
+            background: rgba(0,0,0,0.45);
+            padding: 25px;
+        }
+    }
+}
+.test-scroll {
+    height: 100vh;
+}
+.test-inside {
+    height: 100vh;
+    background: url('./components/Home/land1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

@@ -13,6 +13,11 @@ class MainCities extends Component {
         })
         return (
             <div className="home-main-cities-container">
+                <div className="test-scroll">
+                    <div className="test-inside">
+                        <h1>this is dummy text</h1>
+                    </div>
+                </div>
                 <div className="home-city-box stormwind">
                     <div className="citySide">
                         <div className="citySide-text">
@@ -41,9 +46,10 @@ class MainCities extends Component {
                 </div>
 
                 <div className="fortuneCookie">
-                    <h1>Get your fortune!</h1>
-                    <h3>Visit the Darkmoon Faire</h3>
-                    <button>click for your fortune</button>
+                    <div className="in-the-cookie">
+                        <h1>Visit the Darkmoon Faire</h1>
+                        <button>click for your fortune</button>
+                    </div>
                 </div>
 
                 <div className="home-city-box darnassus">
