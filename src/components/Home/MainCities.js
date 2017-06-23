@@ -13,11 +13,6 @@ class MainCities extends Component {
         })
         return (
             <div className="home-main-cities-container">
-                <div className="test-scroll">
-                    <div className="test-inside">
-                        <h1>this is dummy text</h1>
-                    </div>
-                </div>
                 <div className="home-city-box stormwind">
                     <div className="citySide">
                         <div className="citySide-text">
@@ -31,6 +26,16 @@ class MainCities extends Component {
                     <div className="cityImage">
                     </div>
                 </div>
+
+
+                <div className="test-scroll">
+                    <div className="test-inside">
+                        <h1>this is dummy text</h1>
+                    </div>
+                </div>
+
+
+                
                 <div className="home-city-box orgrimmar">
                     <div className="cityImage">
                     </div>

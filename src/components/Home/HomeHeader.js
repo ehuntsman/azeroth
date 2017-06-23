@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import MainCities from './MainCities';
+
+import CallToAction from './CallToAction';
+import Navi from './Navi';
 
 import layerzero from './header-0.svg';
 import layerone from './header-1.svg';
@@ -10,6 +12,7 @@ class HomeHeader extends Component {
     render() {
         return (
             <div className="parallax">
+                <Navi/>
                 <div className="layer-0 parallax-layer">
                     <img src={layerzero}/>
                 </div>
@@ -23,7 +26,8 @@ class HomeHeader extends Component {
                     <img src={layerthree}/>
                 </div>
                 <div className="parallax-cover">
-                    <MainCities />
+                    <h1 className="main-head">A world of Adventure awaits you</h1>
+                    <CallToAction/>
                 </div>
             </div>
         );
