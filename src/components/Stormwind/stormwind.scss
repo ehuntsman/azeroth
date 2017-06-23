@@ -1,24 +1,80 @@
 .stormwind-container {
     .stormwind-nav {
-        position: absolute;
-        bottom: 20px;
+        position: fixed;
+        bottom: 0px;
+        left: calc(50% - 122px);
         z-index: 10;
-        background: #211F20;
-        padding: 5px;
         ul{
             list-style: none;
             margin: 0;
-            padding: 0;
+            width: auto;
+            padding: 5px;
+            background: rgba(0,0,0,0.75);
+            border-radius: 5px;
         }
         li {
-            border: 2px solid #62542A;
             margin: 5px;
+            display: inline-block;
+            height: 64px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-decoration: none;
+            font-weight: lighter;
+            font-size: 12px;
         }
     }
     .para-one {
+        background: url('./components/Stormwind/stormwind4.jpg');
+        background-attachment: fixed;
+        height: 100vh;
+        background-size: cover;
+        img {
+            width: 50vw;
+            right: 2vw;
+            top: -10vh;
+            position: absolute;
+        }
+    }
+    .para-two {
+        background: #094190;
+        padding: 200px 0;
+        color: white;
+        background: linear-gradient(60deg, #045abf, #007add, #004a87);
+        background-size: 600% 600%;
+        -webkit-animation: stormwindCake 30s ease infinite;
+        animation: stormwindCake 30s ease infinite;
+        @-webkit-keyframes stormwindCake {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes stormwindCake { 
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+    }
+    .para-three {
+        background: url('./components/Stormwind/stormwindmap.jpg');
+        background-attachment: fixed;
+        height: 100vh;
+        background-size: cover;
+    }
+    .para-four {
+        background:url('./components/Stormwind/texture.jpg');
+        background-size: 25vh;
+        height: 7vh;
+        padding: 9vh 0;
+        color: white;
+    }
+    .para-five {
         background: url('./components/Stormwind/stormwind1.jpg');
         background-attachment: fixed;
         height: 100vh;
+        background-size: cover;
     }
     h1{
         color: white;
