@@ -16,26 +16,28 @@ class CallToAction extends Component {
         return (
             <div className="home-main-cities-container">
                 <div className="cities">
-                    <div className="citybox">
-                        <div className="darn-image"></div>
-                        <img src={nightelf} />
-                        <h1>Darnassus</h1>
-                        <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
-                    </div>
+                    <Link to="/Darnassus">
+                        <div className="citybox">
+                            <div className="darn-image"></div>
+                            <img src={nightelf} alt="city"/>
+                            <h1>Darnassus</h1>
+                            <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
+                        </div>
+                    </Link>
                     <Link to="/Stormwind">
                         <div className="citybox">
                             <div className="sw-image"></div>
-                            <img src={human} />
+                            <img src={human} alt="city"/>
                             <h1>Stormwind</h1>
                             <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
                         </div>
                     </Link>
-                    <div className="citybox">
-                        <div className="org-image"></div>
-                        <img src={orc} />
-                        <h1>Orgrimmar</h1>
-                        <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
-                    </div>
+                        <div className="citybox">
+                            <div className="org-image"></div>
+                            <img src={orc} alt="city"/>
+                            <h1>Orgrimmar</h1>
+                            <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
+                        </div>
                 </div>
             </div>
         );

@@ -1,0 +1,93 @@
+.animals-container {
+    // background: white;
+    .pet-box {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        vertical-align: top;
+        text-align: center;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            display: block;
+            color: grey;
+            margin-top: 0;
+        }
+    }
+    .animal-header {
+        background: url(./components/Animals/mischief.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 75vh;
+        margin-bottom: 50px;
+        h1 {
+            padding-top: 30vh;
+            color: white;
+            margin: 0;
+        }
+        p {
+            color: white;
+        }
+        img {
+            width: 50vw;
+            position: absolute;
+            left: 3vw;
+        }
+    }
+    .row-your-boat{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        h4 {
+            color: #9CFC2A;
+            width: 400px;
+            margin: 0 auto 50px auto;
+        }
+        .pet-box:nth-child(odd){
+            background: #111111;
+        }
+    }
+    .animals-nav {
+        position: fixed;
+        bottom: 0px;
+        left: calc(50% - 40px);
+        z-index: 10;
+        ul{
+            list-style: none;
+            margin: 0;
+            width: auto;
+            padding: 5px;
+            background: rgba(0,0,0,0.75);
+            border-radius: 5px;
+        }
+        li {
+            margin: 5px;
+            display: inline-block;
+            height: 64px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-decoration: none;
+            font-weight: lighter;
+            font-size: 12px;
+        }
+    }
+}
+
+.animals-link-thing{
+    margin-top: -107px;
+    img {
+        width: 50vw;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1 {
+        margin-top: -60px;
+    }
+}

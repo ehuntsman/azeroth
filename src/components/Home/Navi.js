@@ -5,7 +5,7 @@ class Navi extends Component {
     render() {
         return (
             <div className="navi">
-                <img src={logo}/>
+                <img src={logo} alt="logo"/>
             </div>
         );
     }

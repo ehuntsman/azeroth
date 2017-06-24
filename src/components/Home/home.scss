@@ -12,7 +12,7 @@
 
 .parallax {
   perspective: 100px;
-//   height: 100vh;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
@@ -42,13 +42,13 @@
 
 .parallax-cover{
   background: black;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 92%;
   left: 0;
   right: 0;
-  height: 313px;
+  height: 1000px;
   z-index: 2;
-  padding-top: 100px;
+  padding-top: 57px;
   h1, p{
       color: white;
       margin: 0;
@@ -65,41 +65,6 @@ $parallaxLayers: 3;
   .layer-#{$i}{
      transform: translateZ(-100 * $x#{px}) scale($x + 1);
   }
-}
-
-.fortuneCookie {
-    height: 80vh;
-    .in-the-cookie{
-        background: url('./components/Home/darkmoon.png') no-repeat;
-        padding: 40vh 0;
-        background-position: center;
-        h1 {
-            background: rgba(0,0,0,0.45);
-            padding: 25px;
-        }
-    }
-}
-.test-scroll {
-    display: block;
-    min-height: 100vh;
-    background: url('./components/Home/land1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.test-inside {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-}
-
-.spacer {
-    height: 100vh;
-    width: 100vw;
 }
 
 .cities {

@@ -1,4 +1,4 @@
-.stormwind-container {
+.darnassus-container {
     .stormwind-nav {
         position: fixed;
         bottom: 0px;
@@ -27,7 +27,7 @@
         }
     }
     .para-one {
-        background: url('./components/Stormwind/stormwind4.jpg');
+        background: url('./components/Darnassus/darn1.jpg');
         background-attachment: fixed;
         height: 100vh;
         background-size: cover;
@@ -39,13 +39,13 @@
         }
     }
     .para-two {
-        background: #501005;
-        padding: 10px 0;
+        background: #094190;
+        padding: 200px 0;
         color: white;
-        background: linear-gradient(60deg, #501005, #FBC938, #F8201E);
+        background: linear-gradient(60deg, #045abf, #007add, #004a87);
         background-size: 600% 600%;
         -webkit-animation: StormwindGradient 30s ease infinite;
-        animation: StormwindGradient 20s ease infinite;
+        animation: StormwindGradient 30s ease infinite;
         @-webkit-keyframes StormwindGradient {
             0%{background-position:0% 50%}
             50%{background-position:100% 50%}
@@ -56,21 +56,19 @@
             50%{background-position:100% 50%}
             100%{background-position:0% 50%}
         }
-        img {
-            width: 70vw;
-        }
     }
     .para-three {
-        background: url('./components/Stormwind/stormwindmap.jpg');
+        background: url('./components/Darnassus/darnassusmap.jpg');
         background-attachment: fixed;
         height: 100vh;
         background-size: cover;
+        background-position: center;
     }
     .para-four {
-        background:url('./components/Stormwind/texture.jpg');
+        background:url('./components/Darnassus/texture.jpg');
         background-size: 25vh;
-        height: 7vh;
-        padding: 9vh 0;
+        height: 4.5vh;
+        padding: 6.9vh 0;
         color: white;
     }
     .para-five {

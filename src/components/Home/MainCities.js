@@ -16,7 +16,7 @@ class MainCities extends Component {
                 <div className="home-city-box stormwind">
                     <div className="citySide">
                         <div className="citySide-text">
-                            <img src={human} />
+                            <img src={human} alt="human"/>
                             <h1>Stormwind</h1>
                             <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
                         </div>
@@ -35,13 +35,13 @@ class MainCities extends Component {
                 </div>
 
 
-                
+
                 <div className="home-city-box orgrimmar">
                     <div className="cityImage">
                     </div>
                     <div className="citySide">
                         <div className="citySide-text">
-                            <img src={orc} />
+                            <img src={orc} alt="orc"/>
                             <h1>Orgrimmar</h1>
                             <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
                         </div>
@@ -62,7 +62,7 @@ class MainCities extends Component {
                     </div>
                     <div className="citySide">
                         <div className="citySide-text">
-                            <img src={nightelf} />
+                            <img src={nightelf} alt="elf" />
                             <h1>Darnassus</h1>
                             <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
                         </div>

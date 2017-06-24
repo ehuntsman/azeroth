@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import {Link} from 'react-router-dom';
 
-import DataStuff from '../Animals/DataStuff';
-
 import shopping from './shopping.png';
 import fishing from './fishing.png';
 import eating from './eating.png';
 import home from './home.png';
-import swgreet from './SWgreetings.svg';
+import darngreet from './DarnGreet.svg';
 
-class Stormwind extends Component {
+class Darnassus extends Component {
     render() {
         $(document).ready(function(){
             $("#home").hover(
@@ -25,7 +23,7 @@ class Stormwind extends Component {
                         width: '-=5px'
                     });
                 }
-            ),
+            )
             $("#shop").hover(
                 function(){
                     $("#shop img").animate({
@@ -38,7 +36,7 @@ class Stormwind extends Component {
                         width: '-=5px'
                     });
                 }
-            ),
+            )
             $("#fish").hover(
                 function(){
                     $("#fish img").animate({
@@ -51,7 +49,7 @@ class Stormwind extends Component {
                         width: '-=5px'
                     });
                 }
-            ),
+            )
             $("#eat").hover(
                 function(){
                     $("#eat img").animate({
@@ -67,12 +65,12 @@ class Stormwind extends Component {
             )
         })
         return (
-            <div className="stormwind-container">
+            <div className="darnassus-container">
                 <div className="para-one">
-                    <img src={swgreet} />
+                    <img src={darngreet} src="greetings"/>
                 </div>
                 <div className="para-two">
-                    <DataStuff/>
+                    <p>Home to the king blah blah blah</p>
                 </div>
                 <div className="para-three">
                 </div>
@@ -106,4 +104,4 @@ class Stormwind extends Component {
     }
 }
 
-export default Stormwind;
+export default Darnassus;
