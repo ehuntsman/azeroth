@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import CallToAction from './CallToAction';
 import Navi from './Navi';
 import DataStuff from '../Animals/DataStuff';
+import MainNavi from '../MainNavi/MainNavi';
 
 import layerzero from './header-0.svg';
 import layerone from './header-1.svg';
@@ -30,6 +31,7 @@ class HomeHeader extends Component {
                     <h1 className="main-head">A world of Adventure awaits you</h1>
                     <CallToAction/>
                 </div>
+                <MainNavi/>
             </div>
         );
     }

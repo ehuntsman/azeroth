@@ -4,6 +4,8 @@ import {Switch, Route} from 'react-router-dom';
 import Home from './components/Home/HomeHeader';
 import Stormwind from './components/Stormwind/Stormwind';
 import Darnassus from './components/Darnassus/Darnassus';
+import Darkmoon from './components/Darnassus/Darkmoon';
+import Orgrimmar from './components/Orgrimmar/Orgrimmar';
 import Animals from './components/Animals/Animals';
 
 export default(
@@ -11,6 +13,8 @@ export default(
         <Route exact component={Home} path='/' />
         <Route component={Stormwind} path='/Stormwind' />
         <Route component={Darnassus} path='/Darnassus' />
+        <Route component={Orgrimmar} path='/Orgrimmar' />
+        <Route component={Darkmoon} path='/DarkmoonFaire' />
         <Route component={Animals} path='/animals' />
     </Switch>
 )

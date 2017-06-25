@@ -3,7 +3,8 @@ import {connect} from 'react-redux';
 import {setAnimal} from '../../ducks/animals.js';
 import {Link} from 'react-router-dom';
 
-import home from '../Stormwind/home.png';
+import MainNavi from '../MainNavi/MainNavi';
+
 import love from './love.svg';
 
 class Animals extends Component {
@@ -34,14 +35,7 @@ class Animals extends Component {
                         )
                     })}
                 </div>
-                <section className="animals-nav">
-                    <ul>
-                        <li id="home"><Link to='/'>
-                            <img src={home} alt="home"/>
-                            <p>home</p>
-                        </Link></li>
-                    </ul>
-                </section>
+                <MainNavi/>
             </div>
         );
     }

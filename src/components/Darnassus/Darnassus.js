@@ -1,104 +1,44 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import {Link} from 'react-router-dom';
 
-import shopping from './shopping.png';
-import fishing from './fishing.png';
-import eating from './eating.png';
-import home from './home.png';
+import MainNavi from '../MainNavi/MainNavi';
+
 import darngreet from './DarnGreet.svg';
 
 class Darnassus extends Component {
     render() {
-        $(document).ready(function(){
-            $("#home").hover(
-                function(){
-                    $("#home img").animate({
-                        height: '+=5px',
-                        width: '+=5px'
-                    });
-                }, function(){
-                    $("#home img").animate({
-                        height: '-=5px',
-                        width: '-=5px'
-                    });
-                }
-            )
-            $("#shop").hover(
-                function(){
-                    $("#shop img").animate({
-                        height: '+=5px',
-                        width: '+=5px'
-                    });
-                }, function(){
-                    $("#shop img").animate({
-                        height: '-=5px',
-                        width: '-=5px'
-                    });
-                }
-            )
-            $("#fish").hover(
-                function(){
-                    $("#fish img").animate({
-                        height: '+=5px',
-                        width: '+=5px'
-                    });
-                }, function(){
-                    $("#fish img").animate({
-                        height: '-=5px',
-                        width: '-=5px'
-                    });
-                }
-            )
-            $("#eat").hover(
-                function(){
-                    $("#eat img").animate({
-                        height: '+=5px',
-                        width: '+=5px'
-                    });
-                }, function(){
-                    $("#eat img").animate({
-                        height: '-=5px',
-                        width: '-=5px'
-                    });
-                }
-            )
-        })
         return (
             <div className="darnassus-container">
                 <div className="para-one">
-                    <img src={darngreet} src="greetings"/>
+                    <img src={darngreet} alt="greetings"/>
                 </div>
                 <div className="para-two">
-                    <p>Home to the king blah blah blah</p>
+                    <p>Home to the enchanting Night Elves</p>
                 </div>
                 <div className="para-three">
+                    <div className="darn-history">
+                        <h3>Darnassus is like no other</h3>
+                        <p>The atmosphere inside the city is quiet and tranquil. It does not have the feeling of confinement that one would feel in Stormwind or Ironforge, where the buildings are grouped close together. Darnassus is open to the sky, and the graceful bridges spanning the lake around which it is built set the buildings wide apart.</p>The elegant bridges, beautiful groves, and leaf-covered pathways that dot the city’s landscape are testaments to the night elves’ reverence for nature.
+                        <p>One of Darnassus’s most notable structures is the stunning Temple of the Moon, the center of worship for High Priestess Tyrande Whisperwind and her Sisters of Elune. The prime reason why the city's population is so low is that it is isolated: Teldrassil is a small island away from the main mass of Azeroth, and the only way to gain access from another continent is to fly or sail to Rut'theran Village, a small settlement at the base of Teldrassil, and from there step into the glowing portal to the city proper.</p>
+                    </div>
                 </div>
                 <div className="para-four">
-                    <p>Home to the king blah blah blah</p>
+                    <h3>High Priestess Tyrande Whisperwind watch over you</h3>
                 </div>
                 <div className="para-five">
+                    <div className="interests">
+                        <h1>Places of Interest</h1>
+                        <ul>
+                            <li>Temple of the Moon</li>
+                            <li>Warrior's Terrace</li>
+                            <li>Temple Gardens</li>
+                            <li>Cenarion Enclave</li>
+                            <li>The Howling Oak</li>
+                            <li>Bough of the Eternals</li>
+                        </ul>
+                    </div>
                 </div>
-                <section className="stormwind-nav">
-                    <ul>
-                        <li id="home"><Link to='/'>
-                            <img src={home} alt="home"/>
-                            <p>home</p>
-                        </Link></li>
-                        <li id="shop">
-                            <img src={shopping} alt="shopping"/>
-                            <p>shopping</p>
-                        </li>
-                        <li id="fish">
-                            <img src={fishing} alt="fishing"/>
-                            <p>fishing</p>
-                        </li>
-                        <li id="eat">
-                            <img src={eating} alt="eating"/>
-                            <p>food</p>
-                        </li>
-                    </ul>
-                </section>
+                <MainNavi />
             </div>
         );
     }

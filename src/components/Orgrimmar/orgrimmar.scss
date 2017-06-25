@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative");
 
-.stormwind-container {
+.orgrimmar-container {
     h1{
         font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
     }
     .para-one {
-        background: url('./components/Stormwind/stormwind4.jpg');
+        background: url('./components/Orgrimmar/org1.jpg');
         background-attachment: fixed;
         height: 100vh;
         background-size: cover;
@@ -20,9 +20,9 @@
         background: #501005;
         padding: 10px 0;
         color: white;
-        background: linear-gradient(60deg, #501005, #FBC938, #F8201E);
+        background: linear-gradient(60deg, #9C47A4, #982819, black, #4F834F);
         background-size: 600% 600%;
-        -webkit-animation: StormwindGradient 30s ease infinite;
+        -webkit-animation: StormwindGradient 20s ease infinite;
         animation: StormwindGradient 20s ease infinite;
         @-webkit-keyframes StormwindGradient {
             0%{background-position:0% 50%}
@@ -35,11 +35,13 @@
             100%{background-position:0% 50%}
         }
         img {
-            width: 70vw;
+            height: 200px;
+            margin-top: -67px;
+            margin-bottom: -67px;
         }
     }
     .para-three {
-        background: url('./components/Stormwind/stormwindmap.jpg');
+        background: url('./components/Orgrimmar/orgmap.png');
         background-attachment: fixed;
         background-size: cover;
         padding: 7vh 7vw;
@@ -55,15 +57,15 @@
         }
     }
     .para-four {
-        background:url('./components/Stormwind/texture.jpg');
-        background-size: 25vh;
+        background:url('./components/Orgrimmar/texture.png');
+        background-size: 17vh;
         height: 7vh;
         padding: 9vh 0;
-        color: white;
+        color: #42ed2f;
         font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
     }
     .para-five {
-        background: url('./components/Stormwind/stormwind1.jpg');
+        background: url('./components/Orgrimmar/org2.jpg');
         background-attachment: fixed;
         height: 100vh;
         background-size: cover;

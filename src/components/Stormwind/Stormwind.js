@@ -3,11 +3,7 @@ import $ from 'jquery';
 import {Link} from 'react-router-dom';
 
 import DataStuff from '../Animals/DataStuff';
-
-import shopping from './shopping.png';
-import fishing from './fishing.png';
-import eating from './eating.png';
-import home from './home.png';
+import MainNavi from '../MainNavi/MainNavi';
 import swgreet from './SWgreetings.svg';
 
 class Stormwind extends Component {
@@ -75,32 +71,31 @@ class Stormwind extends Component {
                     <DataStuff/>
                 </div>
                 <div className="para-three">
+                    <div className="sw-history">
+                        <h3>Currently in Stormwind</h3>
+                        <p>The hard-working citizens of Stormwind have been hard at work rebuilding Stormwind Park where they managed to rebuild a large mass of earth that was ripped out of the land from Deathwing's attack to rebuild the park upon . Following the death of King Varian Wrynn at the Broken Shore, King Wrynn's tomb is displayed in a portion of the new park as well as a memorial listing the names of fallen Alliance soldiers.</p>
+                        <p>The young prince, Anduin Wrynn, was officially crowned the new king of Stormwind.</p>
+                        <p>As the biggest patron of the Alliance, the kingdom of Stormwind continues to lead the Alliance in their never ending war against the threats to Azeroth and their perennial enemy, the Horde. Under King Wrynn's guidance, Stormwind hopes to usher an age of lasting peace.</p>
+                    </div>
                 </div>
                 <div className="para-four">
-                    <p>Home to the king blah blah blah</p>
+                    <h3>All hail the young prince, King Anduin Wrynn</h3>
                 </div>
                 <div className="para-five">
+                    <div className="interests">
+                        <h1>Places of Interest</h1>
+                        <ul>
+                            <li>Stormwind Keep</li>
+                            <li>Cathedral of Light</li>
+                            <li>Stormwind Harbor</li>
+                            <li>The Park</li>
+                            <li>Valley of Heroes</li>
+                            <li>Deeprun Tram</li>
+                            <li>The Stockade</li>
+                        </ul>
+                    </div>
                 </div>
-                <section className="stormwind-nav">
-                    <ul>
-                        <li id="home"><Link to='/'>
-                            <img src={home} alt="home"/>
-                            <p>home</p>
-                        </Link></li>
-                        <li id="shop">
-                            <img src={shopping} alt="shopping"/>
-                            <p>shopping</p>
-                        </li>
-                        <li id="fish">
-                            <img src={fishing} alt="fishing"/>
-                            <p>fishing</p>
-                        </li>
-                        <li id="eat">
-                            <img src={eating} alt="eating"/>
-                            <p>food</p>
-                        </li>
-                    </ul>
-                </section>
+                <MainNavi />
             </div>
         );
     }

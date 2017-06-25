@@ -13,6 +13,7 @@
     "redux": "^3.7.0",
     "redux-promise-middleware": "^4.3.0"
   },
+  "homepage": "https://ehuntsman.github.io/azeroth",
   "devDependencies": {
     "npm-run-all": "^4.0.2",
     "react-scripts": "1.0.7"
