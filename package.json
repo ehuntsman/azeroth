@@ -15,10 +15,13 @@
   },
   "homepage": "https://ehuntsman.github.io/azeroth",
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "npm-run-all": "^4.0.2",
     "react-scripts": "1.0.7"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
