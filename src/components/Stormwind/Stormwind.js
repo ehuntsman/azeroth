@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
-import {Link} from 'react-router-dom';
 
 import DataStuff from '../Animals/DataStuff';
 import MainNavi from '../MainNavi/MainNavi';
@@ -8,64 +6,10 @@ import swgreet from './SWgreetings.svg';
 
 class Stormwind extends Component {
     render() {
-        $(document).ready(function(){
-            $("#home").hover(
-                function(){
-                    $("#home img").animate({
-                        height: '+=5px',
-                        width: '+=5px'
-                    });
-                }, function(){
-                    $("#home img").animate({
-                        height: '-=5px',
-                        width: '-=5px'
-                    });
-                }
-            ),
-            $("#shop").hover(
-                function(){
-                    $("#shop img").animate({
-                        height: '+=5px',
-                        width: '+=5px'
-                    });
-                }, function(){
-                    $("#shop img").animate({
-                        height: '-=5px',
-                        width: '-=5px'
-                    });
-                }
-            ),
-            $("#fish").hover(
-                function(){
-                    $("#fish img").animate({
-                        height: '+=5px',
-                        width: '+=5px'
-                    });
-                }, function(){
-                    $("#fish img").animate({
-                        height: '-=5px',
-                        width: '-=5px'
-                    });
-                }
-            ),
-            $("#eat").hover(
-                function(){
-                    $("#eat img").animate({
-                        height: '+=5px',
-                        width: '+=5px'
-                    });
-                }, function(){
-                    $("#eat img").animate({
-                        height: '-=5px',
-                        width: '-=5px'
-                    });
-                }
-            )
-        })
         return (
             <div className="stormwind-container">
                 <div className="para-one">
-                    <img src={swgreet} />
+                    <img src={swgreet} alt="greetings"/>
                 </div>
                 <div className="para-two">
                     <DataStuff/>

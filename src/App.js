@@ -83,6 +83,19 @@ export default function App() {
               });
           }
       )
+      $("#characters").hover(
+          function(){
+              $("#characters img").animate({
+                  height: '+=5px',
+                  width: '+=5px'
+              });
+          }, function(){
+              $("#characters img").animate({
+                  height: '-=5px',
+                  width: '-=5px'
+              });
+          }
+      )
   })
   return (
     <div className="App">

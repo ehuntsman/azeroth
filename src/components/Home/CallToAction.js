@@ -32,12 +32,14 @@ class CallToAction extends Component {
                             <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
                         </div>
                     </Link>
+                    <Link to="/Orgrimmar">
                         <div className="citybox">
                             <div className="org-image"></div>
                             <img src={orc} alt="city"/>
                             <h1>Orgrimmar</h1>
                             <p>Adipisicing anim ex aliquip voluptate ipsum cupidatat. Labore eiusmod sint irure ullamco magna nostrud et veniam duis.</p>
                         </div>
+                    </Link>
                 </div>
             </div>
         );

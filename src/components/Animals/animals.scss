@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative");
+
 .animals-container {
     // background: white;
     .pet-box {
@@ -49,6 +51,77 @@
         .pet-box:nth-child(odd){
             background: #111111;
         }
+        h2 {
+            color: white;
+            font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif; 
+        }
+    }
+    .beast-header {
+        background: #501005;
+        background: linear-gradient(60deg, black, #898F3C, #3C1E40, #b70000);
+    }
+    .magical-header {
+        background: #501005;
+        background: linear-gradient(60deg, #70e7ff, #3E606F, #ff8eea, #193441);
+    }
+    .undead-header {
+        background: #501005;
+        background: linear-gradient(60deg, #8CB299, #330042, black, #B2BFDB);
+    }
+    .critter-header {
+        background: #501005;
+        background: linear-gradient(60deg, #5A708C, #A67233, #BF9E75, #F2CA99, #0D0D0D);
+    }
+    .flying-header {
+        background: #501005;
+        background: linear-gradient(60deg, #D98F9D, #A65D78, #705F73, #262240, #D98484);
+    }
+    .dragon-header {
+        background: #501005;
+        background: linear-gradient(60deg, #333106, #73714B, #B08601, #24508F);
+    }
+    .mech-header {
+        background: #501005;
+        background: linear-gradient(60deg, #2B0213, #4A1411, #E3B86D, #BD8310);
+    }
+    .elemental-header {
+        background: #501005;
+        background: linear-gradient(60deg, #152142, #152142, #CC493F, #4F2A19, #9BCC3F);
+    }
+    .humanoid-header {
+        background: #501005;
+        background: linear-gradient(60deg, #8C7C6D, #402A0F, #D9A796, #4F2A19, #261807, #A66660);
+    }
+    .water-header {
+        background: #501005;
+        background: linear-gradient(60deg, #00CCFF, #A1FCFF, #040438, #004878, #C9FAFF);
+    }
+    @-webkit-keyframes AnimalGradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimalGradient { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    .beast-header,
+    .magical-header,
+    .undead-header,
+    .critter-header,
+    .flying-header,
+    .dragon-header,
+    .mech-header,
+    .elemental-header,
+    .humanoid-header,
+    .water-header {
+        padding: 40px 0;
+        margin: 20px 0 50px 0;
+        border-radius: 5px;
+        background-size: 600% 600%;
+        -webkit-animation: AnimalGradient 20s ease infinite;
+        animation: AnimalGradient 20s ease infinite;
     }
 }
 
@@ -64,3 +137,35 @@
         margin-top: -60px;
     }
 }
+
+.spacer {
+    height: 120px;
+    width: 100vw;
+}
+
+.char-header {
+    background: url(./components/Characters/spread.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    height: 90vh;
+    margin-bottom: 50px;
+}
+
+.char-box {
+        display: inline-block;
+        width: 150px;
+        // height: 100px;
+        vertical-align: top;
+        text-align: center;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+        }
+        p {
+            display: block;
+            color: grey;
+            margin-top: 0;
+        }
+    }

@@ -1,6 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import $ from 'jquery';
 
 import MainNavi from '../MainNavi/MainNavi';
 
@@ -8,47 +6,6 @@ import darkhead from '../Home/darkmoon.png';
 import silas from './Silas.jpg';
 
 const Darkmoon = () => {
-    $(document).ready(function(){
-        $("#home").hover(
-            function(){
-                $("#home img").animate({
-                    height: '+=5px',
-                    width: '+=5px'
-                });
-            }, function(){
-                $("#home img").animate({
-                    height: '-=5px',
-                    width: '-=5px'
-                });
-            }
-        )
-        $("#shop").hover(
-            function(){
-                $("#shop img").animate({
-                    height: '+=5px',
-                    width: '+=5px'
-                });
-            }, function(){
-                $("#shop img").animate({
-                    height: '-=5px',
-                    width: '-=5px'
-                });
-            }
-        )
-        $("#eat").hover(
-            function(){
-                $("#eat img").animate({
-                    height: '+=5px',
-                    width: '+=5px'
-                });
-            }, function(){
-                $("#eat img").animate({
-                    height: '-=5px',
-                    width: '-=5px'
-                });
-            }
-        )
-    })
     return (
         <div className="darkmoon-container">
             <div className="dm-head">
@@ -88,7 +45,8 @@ const Darkmoon = () => {
                     </div>
                 </div>
                 <div className="parallax-three">
-                    <div className="dm-games">
+                    <div className="interests">
+                        <h1>Games and Fun for All!</h1>
                         <ul>
                             <li>It's Hammer Time</li>
                             <li>The Humanoid Cannonball</li>

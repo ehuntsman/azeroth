@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../img/logo.svg'
+import logo from './logo.svg'
 
 class Navi extends Component {
     render() {

@@ -7,6 +7,7 @@ import Darnassus from './components/Darnassus/Darnassus';
 import Darkmoon from './components/Darnassus/Darkmoon';
 import Orgrimmar from './components/Orgrimmar/Orgrimmar';
 import Animals from './components/Animals/Animals';
+import Characters from './components/Characters/Characters';
 
 export default(
     <Switch>
@@ -16,5 +17,6 @@ export default(
         <Route component={Orgrimmar} path='/Orgrimmar' />
         <Route component={Darkmoon} path='/DarkmoonFaire' />
         <Route component={Animals} path='/animals' />
+        <Route component={Characters} path='/characters' />
     </Switch>
 )
